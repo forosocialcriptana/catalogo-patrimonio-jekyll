@@ -4,6 +4,7 @@ title: Índice de lugares
 header-img: img/fondo-azul.png
 ---
 
+## Índice alfabético
 
 - [Álamo blanco centenario](alamo-blanco-centenario/index.html)
 
@@ -532,4 +533,3 @@ header-img: img/fondo-azul.png
 - [Yacimiento de Valrrepiso](yacimiento-de-valrrepiso/index.html)
 
 - [Yacimiento romano-medieval de Villajos](yacimiento-romano-medieval-de-villajos/index.html)
-
