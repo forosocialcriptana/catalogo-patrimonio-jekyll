@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Script para crear crear el catálogo de patrimonio de Campo de Criptana\n# Author: Alfredo Sánchez Alberca (asalber@gmail.com)\n\n# URL de la hoja de cálculo con los datos\nurl.data <- \"https://docs.google.com/spreadsheets/d/1hWyDiPwVU1oUflqVSC6iSveP-NigMpZhh9e7RKXZpJk/pub?output=csv\"\nlibrary(RCurl)\nlibrary(rmarkdown)\nlibrary(yaml)\nlibrary(dplyr)\n\n\n# Carga de los datos\ndata <- read.csv(text = getURL(url.data, .encoding = \"UTF-8\"), encoding = \"UTF-8\", header = T, stringsAsFactors = F)\ndata <- data %>% arrange(Título)\nheaders <- gsub(\".\", \" \", names(data), fixed=T)\n\n\n#' Title\n#' Función que crea un fichero con el contenido de una ficha de un lugar en formato markdown. \n#' El nombre del fichero en formato Rmarkdown se toma del segundo campo que se supone es el título de ficha.\n#' @param x Vector con los campos de la ficha.\n#'\n#' @return None\n#' @export\n#'\n#' @examples\nrender.record <- function(x){\n  # Primero eliminar tildes, espacios y pasar a minuscula\n  name <- gsub(\" \", \"-\", tolower(iconv(x[2], to='ASCII//TRANSLIT')))\n  name <- gsub(\"/\", \"-\", name)\n  file.name <- paste(\"lugares/\", name, \".md\", sep=\"\")\n  file.create(file.name)\n  # Descargar fotos\n  url.photos <- trimws(unlist(strsplit(gsub(\"open\\\\?\", \"uc?export=download&\", x[,9]), \",\")))\n  photos <- NULL\n  if (length(url.photos)>0) {\n    for (i in 1:length(url.photos)) {\n      photos[i] <- paste(\"img/\", name, \"-\", i, \".jpg\", sep=\"\")\n      download.file(url.photos[i], photos[i], method=\"wget\", mode=\"w\")\n    }\n    banner = photos[1]\n  } else {\n    banner=\"img/fondo-azul.png\"\n  }\n  yamlheader <- as.yaml(list(layout=\"page\", title=as.character(x[2]), \"header-img\"=banner, categories=as.character(x[7]), comments=as.character(\"true\")))\n  write(paste(\"---\\n\", yamlheader,\"---\\n\\n\", sep=\"\"), file=file.name, append=T)\n  write(unlist(x[5]), file=file.name, append=T)\n  write(\"\\n<div class=\\\"photos\\\">\", file=file.name, append=T)\n  lapply(photos, function(y) write(paste(\"<img src=\\\"/\", y, \"\\\" alt=\\\"\", x[2], \"\\\">\", sep=\"\"), file=file.name, append=T))\n  write(\"</div>\", file=file.name, append=T)\n  return(paste(name, \".md\", sep=\"\"))\n}\n\n\n#' Función que genera todas las fichas de los lugares en formato markdown.\n#'\n#' @param data Data frame con los registros de las fichas de los lugares.\n#'\n#' @return None\n#' @export\n#'\n#' @examples\nrender.all.records <- function(data){\n  # Generar el índice\n  file.name = \"lugares/index.md\"\n  file.create(file.name)\n  yamlheader <- \"---\nlayout: page\ntitle: Índice de lugares\nheader-img: img/fondo-azul.png\n---\\n\\n\"\n  write(yamlheader, file=file.name, append=T)\n  write(\"## Índice alfabético\\n\", file=\"index.Rmd\", append=T)\n  write(unlist(lapply(data[,2], function(x) paste(\"- [\", x, \"](\", gsub(\" \", \"-\", tolower(iconv(x, to='ASCII//TRANSLIT'))), \"/index.html)\\n\", sep=\"\"))), file=file.name, append=T)\n  # Generar las fichas\n  lapply(1:nrow(data), function(i) render.record(data[i,]))\n}\n\nrender.all.records(data)\n",
+    "created" : 1468254705705.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3124852427",
+    "id" : "D9CDB29E",
+    "lastKnownWriteTime" : 1468316968,
+    "last_content_update" : 1468316968668,
+    "path" : "/media/alf/datos/web/catalogo-patrimonio/generar_catalogo.R",
+    "project_path" : "generar_catalogo.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

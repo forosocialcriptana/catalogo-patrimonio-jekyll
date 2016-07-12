@@ -1,0 +1,92 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% if site.twitter_username %}
+                    <li>
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.facebook_username %}
+                    <li>
+                        <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.email_username %}
+                    <li>
+                        <a href="mailto:{{ site.email_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <p class="copyright">Copyright &copy; Foro Social de Campo de Criptana {{ site.time | date: '%Y' }}</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "/js/main.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- Kenburned slider -->
+<script src="/js/kenburned.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var $canvas = $('#kb-container');
+
+    $canvas.attr('width', $(window).width());
+    $canvas.attr('height', $(window).height());
+
+    var kb = $canvas.kenburned({
+            images : [
+                "/img/slider1.jpg",
+                "/img/slider2.jpg",
+                "/img/slider3.jpg",
+                "/img/slider4.jpg",
+                "/img/slider5.jpg",
+            ]
+        });
+
+    $('.prev-slide').click(function(ev) {
+        ev.preventDefault();
+        kb.prevSlide();
+    });
+
+    $('.next-slide').click(function(ev) {
+        ev.preventDefault();
+        kb.nextSlide();
+    });
+});
+</script>
