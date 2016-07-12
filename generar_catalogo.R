@@ -70,7 +70,7 @@ title: Índice de lugares
 header-img: img/fondo-azul.png
 ---\n\n"
   write(yamlheader, file=file.name, append=T)
-  write("## Índice alfabético\n", file="index.Rmd", append=T)
+  write("## Índice alfabético\n", file=file.name, append=T)
   write(unlist(lapply(data[,2], function(x) paste("- [", x, "](", gsub(" ", "-", tolower(iconv(x, to='ASCII//TRANSLIT'))), "/index.html)\n", sep=""))), file=file.name, append=T)
   # Generar las fichas
   lapply(1:nrow(data), function(i) render.record(data[i,]))
