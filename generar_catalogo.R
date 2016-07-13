@@ -46,7 +46,7 @@ render.record <- function(x){
   write(paste("---\n", yamlheader,"---\n\n", sep=""), file=file.name, append=T)
   write(unlist(x[6]), file=file.name, append=T)
   write("\n<div class=\"photos\">", file=file.name, append=T)
-  lapply(photos, function(y) write(paste("<img src=\"/", y, "\" alt=\"", x[2], "\">", sep=""), file=file.name, append=T))
+  lapply(photos, function(y) write(paste("<img src=\"{{ site.github.url }}/", y, "\" alt=\"", x[2], "\">", sep=""), file=file.name, append=T))
   write("</div>", file=file.name, append=T)
   return(paste(name, ".md", sep=""))
 }

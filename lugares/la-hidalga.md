@@ -10,5 +10,5 @@ comments: 'true'
 Antigua casa rehabilitada en los últimos años situada dentro de la Reserva Natural del Salicor.
 
 <div class="photos">
-<img src="/img/la-hidalga-1.jpg" alt="La Hidalga">
+<img src="{{ site.github.url }}/img/la-hidalga-1.jpg" alt="La Hidalga">
 </div>

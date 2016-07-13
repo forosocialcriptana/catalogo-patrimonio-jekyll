@@ -10,5 +10,5 @@ comments: 'true'
 Iglesia parroquial. Construcción ecléctica inaugurado en 1958. Sustituye a la antigua iglesia de la Asunción del siglo XVI.
 
 <div class="photos">
-<img src="/img/iglesia-de-la-asuncion-de-ntra-senora-1.jpg" alt="Iglesia de la Asunción de Ntra Señora">
+<img src="{{ site.github.url }}/img/iglesia-de-la-asuncion-de-ntra-senora-1.jpg" alt="Iglesia de la Asunción de Ntra Señora">
 </div>

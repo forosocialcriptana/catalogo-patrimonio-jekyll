@@ -10,5 +10,5 @@ comments: 'true'
 Pequeñas cuevas naturales 
 
 <div class="photos">
-<img src="/img/cuevas-del-camino-de-la-virgen-1.jpg" alt="Cuevas del Camino de la Virgen">
+<img src="{{ site.github.url }}/img/cuevas-del-camino-de-la-virgen-1.jpg" alt="Cuevas del Camino de la Virgen">
 </div>

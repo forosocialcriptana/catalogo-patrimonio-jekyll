@@ -10,5 +10,5 @@ comments: 'true'
 Casa típica
 
 <div class="photos">
-<img src="/img/casa-de-castilla-1.jpg" alt="Casa de Castilla">
+<img src="{{ site.github.url }}/img/casa-de-castilla-1.jpg" alt="Casa de Castilla">
 </div>

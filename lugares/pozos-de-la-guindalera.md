@@ -10,6 +10,6 @@ comments: 'true'
 Antiguos pozos de piedra de donde se abastecía la población de la villa de agua potable.
 
 <div class="photos">
-<img src="/img/pozos-de-la-guindalera-1.jpg" alt="Pozos de la Guindalera">
-<img src="/img/pozos-de-la-guindalera-2.jpg" alt="Pozos de la Guindalera">
+<img src="{{ site.github.url }}/img/pozos-de-la-guindalera-1.jpg" alt="Pozos de la Guindalera">
+<img src="{{ site.github.url }}/img/pozos-de-la-guindalera-2.jpg" alt="Pozos de la Guindalera">
 </div>
