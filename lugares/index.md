@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Índice de lugares
-header-img: img/fondo-azul.png
+header-img: /img/sierra-de-los-molinos-1.jpg
 ---
 
 

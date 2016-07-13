@@ -67,7 +67,7 @@ render.all.records <- function(data){
   yamlheader <- "---
 layout: page
 title: Índice de lugares
-header-img: img/fondo-azul.png
+header-img: /img/sierra-de-los-molinos-1.jpg
 ---\n\n"
   write(yamlheader, file=file.name, append=T)
   write("## Índice alfabético\n", file=file.name, append=T)
