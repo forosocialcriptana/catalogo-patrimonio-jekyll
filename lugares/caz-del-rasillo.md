@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Caz del Rasillo
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Ambiental
 comments: 'true'
 ---

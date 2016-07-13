@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ermita de San Roque
-header-img: img/ermita-de-san-roque-1.jpg
+header-img: /img/ermita-de-san-roque-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

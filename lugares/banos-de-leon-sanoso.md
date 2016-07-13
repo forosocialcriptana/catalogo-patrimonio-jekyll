@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Baños de León Sañoso
-header-img: img/banos-de-leon-sanoso-1.jpg
+header-img: /img/banos-de-leon-sanoso-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

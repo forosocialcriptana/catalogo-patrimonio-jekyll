@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pozos de la Guindalera
-header-img: img/pozos-de-la-guindalera-1.jpg
+header-img: /img/pozos-de-la-guindalera-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

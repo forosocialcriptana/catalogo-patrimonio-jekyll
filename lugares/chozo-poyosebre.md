@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chozo Poyosebre
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

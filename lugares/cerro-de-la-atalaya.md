@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cerro de La Atalaya
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

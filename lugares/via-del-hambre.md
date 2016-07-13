@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Vía del Hambre
-header-img: img/via-del-hambre-1.jpg
+header-img: /img/via-del-hambre-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

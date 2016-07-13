@@ -2,7 +2,7 @@
 layout: page
 title: "Sobre el Foro Social de Campo de Criptana"
 description: "Por una democracia más participativa"
-header-img: "img/about-bg.jpg"
+header-img: /img/sierra-de-los-molinos-1.jpg
 ---
 
 El Foro Social de Campo de Criptana es un espacio socio-político de participación ciudadana abierto, horizonal y no partidario, que pretende construir una democracia más participativa en Campo de Criptana

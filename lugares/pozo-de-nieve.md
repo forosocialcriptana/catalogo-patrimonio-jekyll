@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pozo de Nieve
-header-img: img/pozo-de-nieve-1.jpg
+header-img: /img/pozo-de-nieve-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Puente de San Benito
-header-img: img/puente-de-san-benito-1.jpg
+header-img: /img/puente-de-san-benito-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

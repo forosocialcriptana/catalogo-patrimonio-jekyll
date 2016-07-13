@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cueva de la Laguna
-header-img: img/cueva-de-la-laguna-1.jpg
+header-img: /img/cueva-de-la-laguna-1.jpg
 categories: Ambiental
 comments: 'true'
 ---

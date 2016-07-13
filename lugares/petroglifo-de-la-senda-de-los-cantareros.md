@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Petroglifo de la Senda de los Cantareros
-header-img: img/petroglifo-de-la-senda-de-los-cantareros-1.jpg
+header-img: /img/petroglifo-de-la-senda-de-los-cantareros-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

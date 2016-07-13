@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Casa del Alto del Serrano
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

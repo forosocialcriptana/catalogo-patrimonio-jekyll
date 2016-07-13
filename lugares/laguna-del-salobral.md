@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Laguna del Salobral
-header-img: img/laguna-del-salobral-1.jpg
+header-img: /img/laguna-del-salobral-1.jpg
 categories: Ambiental
 comments: 'true'
 ---

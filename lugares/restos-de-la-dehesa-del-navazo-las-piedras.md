@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Restos de la Dehesa del Navazo Las Piedras
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Ambiental
 comments: 'true'
 ---

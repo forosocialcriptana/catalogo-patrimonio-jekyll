@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Charcas del Camino de la Virgen
-header-img: img/charcas-del-camino-de-la-virgen-1.jpg
+header-img: /img/charcas-del-camino-de-la-virgen-1.jpg
 categories: Ambiental
 comments: 'true'
 ---

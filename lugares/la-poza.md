@@ -1,7 +1,7 @@
 ---
 layout: page
 title: La poza
-header-img: img/la-poza-1.jpg
+header-img: /img/la-poza-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

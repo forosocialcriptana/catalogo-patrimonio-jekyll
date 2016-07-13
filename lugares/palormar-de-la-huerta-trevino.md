@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Palormar de la huerta Treviño
-header-img: img/palormar-de-la-huerta-trevino-1.jpg
+header-img: /img/palormar-de-la-huerta-trevino-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

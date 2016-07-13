@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ermita de San Isidro
-header-img: img/ermita-de-san-isidro-1.jpg
+header-img: /img/ermita-de-san-isidro-1.jpg
 categories: Histórico
 comments: 'true'
 ---

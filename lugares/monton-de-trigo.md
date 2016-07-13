@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Montón de Trigo
-header-img: img/monton-de-trigo-1.jpg
+header-img: /img/monton-de-trigo-1.jpg
 categories: Histórico
 comments: 'true'
 ---

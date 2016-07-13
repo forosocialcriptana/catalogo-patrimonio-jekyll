@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Entorno de la Hidalga
-header-img: img/entorno-de-la-hidalga-1.jpg
+header-img: /img/entorno-de-la-hidalga-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

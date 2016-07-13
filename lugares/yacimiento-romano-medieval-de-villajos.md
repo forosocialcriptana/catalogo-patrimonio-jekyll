@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Yacimiento romano-medieval de Villajos
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Histórico
 comments: 'true'
 ---

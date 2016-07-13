@@ -1,7 +1,7 @@
 ---
 layout: page
 title: La Hidalga
-header-img: img/la-hidalga-1.jpg
+header-img: /img/la-hidalga-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

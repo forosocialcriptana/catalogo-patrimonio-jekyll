@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Choza Senda Cantareros
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

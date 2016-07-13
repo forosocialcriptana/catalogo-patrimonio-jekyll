@@ -2,7 +2,7 @@
 layout: page
 title: "Contacta"
 description: "Envíanos tus preguntas, comentarios o sugerencias"
-header-img: "img/contact-bg.jpg"
+header-img: "/img/sierra-de-los-molinos-1.jpg"
 ---
 
 Si estás interesado en colaborar en este catálgo, no dudes en ponerte en contacto con nosotros

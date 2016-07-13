@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Restos de cueva-silo de molino
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

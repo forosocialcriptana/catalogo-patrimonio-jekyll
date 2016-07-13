@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Restos neolíticos del Cristo '
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Histórico
 comments: 'true'
 ---

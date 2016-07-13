@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Álamo blanco centenario
-header-img: img/alamo-blanco-centenario-1.jpg
+header-img: /img/alamo-blanco-centenario-1.jpg
 categories: Ambiental
 comments: 'true'
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Arroyo de Sañoso
-header-img: img/arroyo-de-sanoso-1.jpg
+header-img: /img/arroyo-de-sanoso-1.jpg
 categories: Ambiental
 comments: 'true'
 ---

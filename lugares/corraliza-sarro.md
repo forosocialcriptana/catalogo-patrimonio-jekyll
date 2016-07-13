@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Corraliza Sarro
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

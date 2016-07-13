@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pinar de San Isidro
-header-img: img/pinar-de-san-isidro-1.jpg
+header-img: /img/pinar-de-san-isidro-1.jpg
 categories: Ambiental
 comments: 'true'
 ---

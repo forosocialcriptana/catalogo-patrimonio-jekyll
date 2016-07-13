@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cerro del Cristo
-header-img: img/cerro-del-cristo-1.jpg
+header-img: /img/cerro-del-cristo-1.jpg
 categories: Histórico
 comments: 'true'
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Casa de Castilla
-header-img: img/casa-de-castilla-1.jpg
+header-img: /img/casa-de-castilla-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

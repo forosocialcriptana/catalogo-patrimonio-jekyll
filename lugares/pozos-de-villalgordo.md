@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pozos de Villalgordo
-header-img: img/pozos-de-villalgordo-1.jpg
+header-img: /img/pozos-de-villalgordo-1.jpg
 categories: Etnográfico
 comments: 'true'
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cantera de La Sierra
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Etnográfico
 comments: 'true'
 ---

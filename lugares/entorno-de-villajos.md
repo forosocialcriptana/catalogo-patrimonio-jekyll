@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Entorno de Villajos
-header-img: img/entorno-de-villajos-1.jpg
+header-img: /img/entorno-de-villajos-1.jpg
 categories: Histórico
 comments: 'true'
 ---

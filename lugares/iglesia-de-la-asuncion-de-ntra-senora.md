@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Iglesia de la Asunción de Ntra Señora
-header-img: img/iglesia-de-la-asuncion-de-ntra-senora-1.jpg
+header-img: /img/iglesia-de-la-asuncion-de-ntra-senora-1.jpg
 categories: Artístico
 comments: 'true'
 ---

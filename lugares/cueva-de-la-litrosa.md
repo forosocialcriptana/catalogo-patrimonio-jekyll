@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cueva de la Litrosa
-header-img: img/fondo-azul.png
+header-img: /img/fondo-azul.png
 categories: Ambiental
 comments: 'true'
 ---

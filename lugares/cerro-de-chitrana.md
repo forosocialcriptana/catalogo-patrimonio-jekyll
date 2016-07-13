@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cerro de Chitrana
-header-img: img/cerro-de-chitrana-1.jpg
+header-img: /img/cerro-de-chitrana-1.jpg
 categories: Histórico
 comments: 'true'
 ---
