@@ -1,0 +1,31 @@
+---
+layout: page
+title: "Mapa de lugares de interés"
+header-img: /img/sierra-de-los-molinos-1.jpg
+---
+
+```{r, echo=FALSE, , cache=FALSE, message=FALSE, warning=FALSE}
+# URL de la hoja de cálculo con los datos
+library(knitr)
+
+## Global options
+options(digits = 4, scipen=10)
+opts_chunk$set(echo=FALSE, cache=TRUE, prompt=FALSE, tidy=TRUE, comment=NA, message=FALSE, warning=FALSE)
+```
+
+```{r}
+# Carga de los datos
+library(RCurl)
+library(yaml)
+library(dplyr)
+library(leaflet)
+url.data <- "https://docs.google.com/spreadsheets/d/1hWyDiPwVU1oUflqVSC6iSveP-NigMpZhh9e7RKXZpJk/pub?output=csv"
+data <- read.csv(text = getURL(url.data, .encoding = "UTF-8"), encoding = "UTF-8", header = T, stringsAsFactors = F)
+data[["Popup"]] <- paste("<b>", data[["Título"]], "</b>", sep="")
+headers <- gsub(".", " ", names(data), fixed=T)
+m <- leaflet(data=data) %>%
+  setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
+  addTiles("https://api.mapbox.com/styles/v1/forosocialcriptana/ciq96tnhl007zerm4k9idudqz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA") %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=~Longitud, lat=~Latitud, popup=~htmlEscape(Popup))
+m  # Print the map
+```
