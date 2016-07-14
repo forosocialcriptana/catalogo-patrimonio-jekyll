@@ -9,5 +9,7 @@ comments: 'true'
 
 Restos de monte típico de la zona (término de Pedro Muñoz)
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

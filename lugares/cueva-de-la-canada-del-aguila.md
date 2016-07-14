@@ -9,5 +9,7 @@ comments: 'true'
 
 Cueva
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

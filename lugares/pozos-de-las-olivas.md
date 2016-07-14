@@ -9,5 +9,7 @@ comments: 'true'
 
 Antiguos pozos de piedra de donde se abastecían de agua potable los pobladores y las caballerías.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo situado entre la unión de tres caminos.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

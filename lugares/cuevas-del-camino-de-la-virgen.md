@@ -9,6 +9,8 @@ comments: 'true'
 
 Pequeñas cuevas naturales 
 
-<div class="photos">
-<img src="{{ site.github.url }}/img/cuevas-del-camino-de-la-virgen-1.jpg" alt="Cuevas del Camino de la Virgen">
+<div class="photo-gallery">
+<ul>
+<li><img src="{{ site.github.url }}/img/cuevas-del-camino-de-la-virgen-1.jpg" alt="Cuevas del Camino de la Virgen"></li>
+</ul>
 </div>

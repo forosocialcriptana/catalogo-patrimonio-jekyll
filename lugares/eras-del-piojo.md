@@ -9,5 +9,7 @@ comments: 'true'
 
 Antiguas eras
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

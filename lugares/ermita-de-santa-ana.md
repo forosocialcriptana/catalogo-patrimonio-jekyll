@@ -9,5 +9,7 @@ comments: 'true'
 
 Antigua ermita poblada por frailes. Término de El Toboso.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo de pastores integrado en un majano.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

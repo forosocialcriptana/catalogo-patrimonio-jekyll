@@ -9,5 +9,7 @@ comments: 'true'
 
 Casa típica (término de Tomelloso)
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

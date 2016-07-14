@@ -9,5 +9,7 @@ comments: 'true'
 
 Corral para encerrar ganado.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

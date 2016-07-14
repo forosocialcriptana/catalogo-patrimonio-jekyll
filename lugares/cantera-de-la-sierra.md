@@ -9,5 +9,7 @@ comments: 'true'
 
 Antigua cantera en desuso
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

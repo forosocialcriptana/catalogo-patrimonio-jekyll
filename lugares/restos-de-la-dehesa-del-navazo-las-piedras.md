@@ -9,5 +9,7 @@ comments: 'true'
 
 Restos de dehesa típica de la zona ya desaparecida.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

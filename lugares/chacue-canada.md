@@ -9,5 +9,7 @@ comments: 'true'
 
 Construcción rural mezcla de choza y cueva
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Antigua casa de ganado en un paraje característico de la zona
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

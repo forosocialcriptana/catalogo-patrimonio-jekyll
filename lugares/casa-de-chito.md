@@ -9,5 +9,7 @@ comments: 'true'
 
 Antigua casa de labranza que se sigue utilizando hoy en día
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

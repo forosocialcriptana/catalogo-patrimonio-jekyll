@@ -24,6 +24,8 @@ Esta sierra contiene la mayor colección de molinos de viento de la Península I
 
 Solamente tres de ellos (Infanto, Burleta y Sardinero) conservan la estructura y maquinaria original del siglo XVI y pueden realizar moliendas como se hacía siglos atrás.
 
-<div class="photos">
-<img src="{{ site.github.url }}/img/sierra-de-los-molinos-1.jpg" alt="Sierra de los molinos">
+<div class="photo-gallery">
+<ul>
+<li><img src="{{ site.github.url }}/img/sierra-de-los-molinos-1.jpg" alt="Sierra de los molinos"></li>
+</ul>
 </div>

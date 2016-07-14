@@ -9,5 +9,7 @@ comments: 'true'
 
 Construcción rural en piedra seca. Muy bien acondicionado y mantenido en 2011.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

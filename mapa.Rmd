@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Mapa de lugares de interés"
-header-img: /img/sierra-de-los-molinos-1.jpg
 ---
 
 ```{r, echo=FALSE, , cache=FALSE, message=FALSE, warning=FALSE}
@@ -19,13 +18,50 @@ library(RCurl)
 library(yaml)
 library(dplyr)
 library(leaflet)
+library(htmltools)
+baseurl <- "http://forosocialcriptana.github.io/catalogo/"
 url.data <- "https://docs.google.com/spreadsheets/d/1hWyDiPwVU1oUflqVSC6iSveP-NigMpZhh9e7RKXZpJk/pub?output=csv"
 data <- read.csv(text = getURL(url.data, .encoding = "UTF-8"), encoding = "UTF-8", header = T, stringsAsFactors = F)
-data[["Popup"]] <- paste("<b>", data[["Título"]], "</b>", sep="")
-headers <- gsub(".", " ", names(data), fixed=T)
+data[["Tipo.de.valor"]] <- factor(data[["Tipo.de.valor"]])
+# Función que obiene el nombre normalizado para una ficha de un lugar. 
+getName <- function (x) {
+  name <- gsub(" ", "-", tolower(iconv(x, to='ASCII//TRANSLIT')))
+  name <- gsub("/", "-", name)
+  return(name)
+}
+# Transformación de las url de las fotos para tomarlas del catálogo en github
+getUrlPhoto <- function (x) {
+  name <- ""
+  if (x[9]!="") {
+    name <- paste("https://forosocialcriptana.github.io/catalogo/img/small/", getName(x[2]), "-1.jpg", sep="")
+  }
+  return(name)
+}
+data[["Fotos"]] <- apply(data, 1, getUrlPhoto)
+# Creación de una columna con los textos de los popups
+data[["Popup"]] <- paste("<h3><a href=\"", baseurl, "lugares/", getName(data[["Título"]]), "/index.html\">", data[["Título"]], "</a></h3>\n\n<img src=\"", data[["Fotos"]], "\">\n\n<p>", data[["Descripción.breve"]], "</p>", sep="")
+# Paleta de colores
+#tmp <- factor(sample.int(4, nrow(data), TRUE))
+pal <- colorFactor(c("#00FF00FF", "#FFFF00FF", "#FF0000FF", "#0000FFFF"), data[["Tipo.de.valor"]])
+#colors <- colorFactor(terrain.colors(4), levels(data[["Tipo.de.valor"]]))
 m <- leaflet(data=data) %>%
   setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
-  addTiles("https://api.mapbox.com/styles/v1/forosocialcriptana/ciq96tnhl007zerm4k9idudqz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA") %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=~Longitud, lat=~Latitud, popup=~htmlEscape(Popup))
-m  # Print the map
+  addTiles("https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Topográfico") %>%  
+  # Add default OpenStreetMap map tiles
+  addTiles("https://api.mapbox.com/styles/v1/forosocialcriptana/ciq96tnhl007zerm4k9idudqz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Fotográfico") %>%  
+  # Añadir marcadores de lugares
+  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~Popup, color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 4, clusterOptions = markerClusterOptions()) %>%
+  # Control de capas
+  # Layers control
+  addLayersControl(
+    baseGroups = c("Topográfico", "Fotográfico"),
+    #overlayGroups = c("PCT", "Southern Terminus", "Northern Terminus", "States"),
+    options = layersControlOptions(collapsed = FALSE), 
+  ) %>%
+  # Añadir leyenda
+  addLegend(position = 'bottomright', pal=pal, values=~Tipo.de.valor, title="Tipo", opacity = 0.6) 
+# Print the map
+m  
 ```
+
+

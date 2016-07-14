@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo geminado. Construcción rural en piedra seca
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

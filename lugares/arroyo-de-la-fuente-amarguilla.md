@@ -9,5 +9,7 @@ comments: 'true'
 
 Entorno por donde fluía en antiguo arroyo denominado así.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

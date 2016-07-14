@@ -9,5 +9,7 @@ comments: 'true'
 
 Pozo
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

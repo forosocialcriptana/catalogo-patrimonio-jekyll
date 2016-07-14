@@ -9,5 +9,7 @@ comments: 'true'
 
 Punto de paso de la antigua Vereda de Quintanar
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

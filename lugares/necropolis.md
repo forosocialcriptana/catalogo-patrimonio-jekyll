@@ -9,5 +9,7 @@ comments: 'true'
 
 Posible necrópolis. Aparecen fosas de inhumación escavadas en la piedra.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

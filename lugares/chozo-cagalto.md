@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo pequeño, tiene, en 2011, muy deteriorado el lado oriental por acción humana, posiblemente de cazadores.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

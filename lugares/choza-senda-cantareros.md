@@ -9,5 +9,7 @@ comments: 'true'
 
 Típica choza para ser cubierta con ramajes y matorrales. Está deteriorada, pero parece fuerte y resistente en 2010.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo doble recubierto de yeso, tiene la puerta situada al Norte.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

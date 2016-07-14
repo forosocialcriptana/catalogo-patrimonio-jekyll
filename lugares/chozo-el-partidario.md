@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo con cono elevado tipo cuco o cubillo. es el único que se ha localizado en ese entorno.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

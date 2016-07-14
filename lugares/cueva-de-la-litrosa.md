@@ -9,5 +9,7 @@ comments: 'true'
 
 Cueva natural. Cuenta la tradición que fue utilizada por los maquis al término de la guerra civil.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

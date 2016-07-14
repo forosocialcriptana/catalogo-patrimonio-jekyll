@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo de ganaderos tipo Casilla riojana por su elevada bóveda.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Típico chozo de agricultor.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

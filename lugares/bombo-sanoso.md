@@ -9,5 +9,7 @@ comments: 'true'
 
 Construcción rural en piedra seca. Tiene dos conos y ha sido restaurado en 2013 acertadamente.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

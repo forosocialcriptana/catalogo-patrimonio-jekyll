@@ -10,5 +10,7 @@ comments: 'true'
 Se extiende a lo largo de la CM-330 y a lo ancho de la CM-3105.
 Tiene un gran potencial arqueológico.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

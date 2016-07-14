@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo típico de ganaderos.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

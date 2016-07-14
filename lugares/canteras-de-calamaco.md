@@ -9,5 +9,7 @@ comments: 'true'
 
 Antigua cantera ya abandonada.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

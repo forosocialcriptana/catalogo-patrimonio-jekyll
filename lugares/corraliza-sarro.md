@@ -9,5 +9,7 @@ comments: 'true'
 
 Situada junto al chozo del mismo nombre, es la corraliza mejor conservada de nuestro término.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

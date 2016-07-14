@@ -9,5 +9,7 @@ comments: 'true'
 
 Casa típica
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

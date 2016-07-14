@@ -9,5 +9,7 @@ comments: 'true'
 
 Pozo antiguo de piedra
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

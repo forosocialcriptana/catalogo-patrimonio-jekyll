@@ -10,5 +10,7 @@ comments: 'true'
 Chozo evolucionado de otro más antiguo. Visiblemente afectado por reconstrucciones modernas que lo convierten en bombo.
 Sirve de nombre del paraje donde se encuentra.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

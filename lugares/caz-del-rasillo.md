@@ -9,5 +9,7 @@ comments: 'true'
 
 Entorno por donde discurría una antigua corriente de agua.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Muy buen estado de conservación. Tiene una ventana a poniente y está revocado con barro internamente.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

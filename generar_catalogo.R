@@ -45,9 +45,9 @@ render.record <- function(x){
   yamlheader <- as.yaml(list(layout="page", title=as.character(x[2]), "header-img"=paste("/", banner, sep=""), categories=as.character(x[7]), comments=as.character("true")))
   write(paste("---\n", yamlheader,"---\n\n", sep=""), file=file.name, append=T)
   write(unlist(x[6]), file=file.name, append=T)
-  write("\n<div class=\"photos\">", file=file.name, append=T)
-  lapply(photos, function(y) write(paste("<img src=\"{{ site.github.url }}/", y, "\" alt=\"", x[2], "\">", sep=""), file=file.name, append=T))
-  write("</div>", file=file.name, append=T)
+  write("\n<div class=\"photo-gallery\">\n<ul>", file=file.name, append=T)
+  lapply(photos, function(y) write(paste("<li><img src=\"{{ site.github.url }}/", y, "\" alt=\"", x[2], "\"></li>", sep=""), file=file.name, append=T))
+  write("</ul>\n</div>", file=file.name, append=T)
   return(paste(name, ".md", sep=""))
 }
 

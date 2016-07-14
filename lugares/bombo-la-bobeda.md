@@ -9,5 +9,7 @@ comments: 'true'
 
 Construcción rural en piedra seca. El acceso de entradatiene bóveda en vez de dintel.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

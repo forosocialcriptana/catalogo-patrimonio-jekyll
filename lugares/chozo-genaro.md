@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo tradicional, reconstruido en 2012 sin respetar las características de las construcciones en piedra seca.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Lugar para almacenar el cereal
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

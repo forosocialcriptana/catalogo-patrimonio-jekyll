@@ -9,5 +9,7 @@ comments: 'true'
 
 Carretera actual que probablemente se sitúa sobre la antigua vía romana que unía Córdoba y Tarragona, 
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

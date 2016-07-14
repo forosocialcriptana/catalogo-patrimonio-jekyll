@@ -9,5 +9,7 @@ comments: 'true'
 
 Restos de casa de campo
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

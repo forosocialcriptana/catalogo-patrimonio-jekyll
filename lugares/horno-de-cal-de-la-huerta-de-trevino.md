@@ -9,5 +9,7 @@ comments: 'true'
 
 Antiguo horno de donde se extraía piedra caliza
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

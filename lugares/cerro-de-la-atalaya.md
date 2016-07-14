@@ -9,5 +9,7 @@ comments: 'true'
 
 Motilla de la época del Bronce final o MAnchego; profanada antes del los años setenta.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

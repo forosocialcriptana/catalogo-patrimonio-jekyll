@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo con puerta a saliente. Buen estado de conservación en 2011.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

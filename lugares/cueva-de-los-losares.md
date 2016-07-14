@@ -7,7 +7,9 @@ comments: 'true'
 ---
 
 
-Cueva
+Cueva natural de origen kárstico.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

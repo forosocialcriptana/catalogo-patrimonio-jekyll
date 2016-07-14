@@ -9,5 +9,7 @@ comments: 'true'
 
 Construcción rural en piedra seca. Muy deteriorado
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo muy actual revocado en yeso.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

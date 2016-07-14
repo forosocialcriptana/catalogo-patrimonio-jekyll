@@ -9,5 +9,7 @@ comments: 'true'
 
 Entorno característico del término
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

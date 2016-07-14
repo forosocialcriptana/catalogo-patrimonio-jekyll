@@ -9,5 +9,7 @@ comments: 'true'
 
 Lugar donde se extraía piedra para hacer cal
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

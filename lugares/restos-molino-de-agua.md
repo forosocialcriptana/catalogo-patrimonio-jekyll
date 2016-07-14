@@ -9,5 +9,7 @@ comments: 'true'
 
 Restos de un molino de agua antiguo utilizado hasta el s. XX. La existencia de estos molinos en Europa se conoce desde el s. VI. Se basaban en el aprovechamiento de los desniveles de las corrientes de agua para moler y obtener la harina
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo típico criptanense, con puerta pequeña y estrecha. En buen estado de conservación.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

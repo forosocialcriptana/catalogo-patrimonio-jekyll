@@ -9,5 +9,7 @@ comments: 'true'
 
 Construcción rural en piedra seca. Mezcla de chozo y cocero.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

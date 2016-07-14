@@ -9,5 +9,7 @@ comments: 'true'
 
 Cuevas que fueron morada de pobladores en tiempos pasados situados junto al manantial del Caño.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

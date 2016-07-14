@@ -9,5 +9,7 @@ comments: 'true'
 
 Antigua cantera
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

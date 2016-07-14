@@ -9,5 +9,7 @@ comments: 'true'
 
 Chozo geminado muy popular, está muy modificado por actuaciones recientes, revocado en yeso.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

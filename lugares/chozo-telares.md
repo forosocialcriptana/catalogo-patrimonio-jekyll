@@ -9,5 +9,7 @@ comments: 'true'
 
 Bombo doble evolucionado a cocero. Tiene dos bombos unidos internamente, chimenea, poyo y cuadra.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

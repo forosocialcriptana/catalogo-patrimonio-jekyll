@@ -9,5 +9,7 @@ comments: 'true'
 
 Situado entre una cerca entre almendros.
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>

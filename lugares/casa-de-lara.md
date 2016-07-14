@@ -9,5 +9,7 @@ comments: 'true'
 
 Casa de Campo
 
-<div class="photos">
+<div class="photo-gallery">
+<ul>
+</ul>
 </div>
