@@ -3,7 +3,8 @@ title: Catálogo de Patrimonio de Campo de Criptana
 header-img: img/home-bg.jpg
 email: forosocialcriptana@gmail.com
 description: "Lugares de interés histórico, artístico, ambiental y etnográfico de Campo de Criptana"
-
+baseurl: ""
+url: "http://forosocialcriptana.github.io"
 twitter_username: fscriptana
 facebook_username:  forosocialcriptana
 instagram_username: forosocialcriptana
@@ -17,5 +18,3 @@ email_username:  forosocialcriptana@gmail.com
 markdown: kramdown
 permalink: pretty
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-gems: ['jekyll-github-metadata']
