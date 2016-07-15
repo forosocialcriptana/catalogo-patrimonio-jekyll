@@ -2,14 +2,9 @@
 layout: page
 title: Cantera Menudos II
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Antigua cantera
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

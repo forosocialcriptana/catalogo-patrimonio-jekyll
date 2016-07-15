@@ -2,14 +2,9 @@
 layout: page
 title: Chozo almendros
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Chozo de pastores integrado en un majano.
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

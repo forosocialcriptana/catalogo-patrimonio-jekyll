@@ -2,14 +2,9 @@
 layout: page
 title: Casa del Acebrón
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Casa situada en el paraje donde se extendía la dehesa con el mismo nombre ya desaparecida completamente.
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

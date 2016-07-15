@@ -1,0 +1,49 @@
+---
+layout: page
+title: "Categorias"
+description: "Clasificación de lugares por tipo de valor"
+header-img: /img/home-bg.jpg
+---
+
+{% assign rawcategories = "" %}
+{% for post in site.pages %}
+{% assign tcategories = post.category | join:'|' | append:'|' %}
+{% assign rawcategories = rawcategories | append:tcategories %}
+{% endfor %}
+
+{% assign rawcategories = rawcategories | split:'|' | sort %}
+
+{% assign categories = "" %}
+{% for category in rawcategories %}
+{% if category != "" %}
+{% if categories == "" %}
+{% assign categories = category | split:'|' %}
+{% endif %}
+{% unless categories contains category %}
+{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+<div class="posts">
+<p>
+{% for category in categories %}
+<a href="#{{ category | slugify }}" class="category-mark"><i class="fa fa-tag"></i> {{ category }} </a> &nbsp;&nbsp;
+{% endfor %}
+
+{% for category in categories %}
+<hr>
+<h2 id="{{ category | slugify }}">{{ category }}</h2>
+<div class="category-list">
+  <ul>
+  {% for post in site.pages %}
+  {% if post.category contains category %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+</div>

@@ -2,14 +2,9 @@
 layout: page
 title: Chozo Escalerillas
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Chozo muy actual revocado en yeso.
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

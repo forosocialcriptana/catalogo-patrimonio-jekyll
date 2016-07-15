@@ -2,14 +2,9 @@
 layout: page
 title: Chozo del Rey
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Chozo geminado muy popular, está muy modificado por actuaciones recientes, revocado en yeso.
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

@@ -4,24 +4,32 @@ layout: default
 
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{% if page.header-img %}{{ page.header-img | prepend: site.github.url  }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <!-- <hr class="small">
-                    <span class="subheading">{{ page.description }}</span> -->
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+            <!-- <hr class="small">
+            <span class="subheading">{{ page.description }}</span> -->
         </div>
+      </div>
     </div>
+  </div>
 </header>
 
 <!-- Main Content -->
 <div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ content }}
+  <div class="row">
+	  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {% if page.categories.size > 0 %}<i class="fa fa-tags"></i> &nbsp;Categoría: &nbsp;
+      {% for tag in page.categories %}<a href="{{ site.github.url }}/lugares/categorias/{{ tag | cgi_encode }}/" data-toggle="tooltip" title="Otros lugares de la categoría {{ tag }}" rel="tag">{{ tag }}</a>
+      {% unless forloop.last %}
+      &nbsp;&bull;&nbsp;
+      {% endunless %}
+      {% endfor %%}
+      {% endif %}
+
+      {{ content }}
 		</div>
 	</div>
 </div>

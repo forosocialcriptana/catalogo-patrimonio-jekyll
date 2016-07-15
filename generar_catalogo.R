@@ -42,12 +42,41 @@ render.record <- function(x){
   } else {
     banner="img/fondo-azul.png"
   }
-  yamlheader <- as.yaml(list(layout="page", title=as.character(x[2]), "header-img"=paste("/", banner, sep=""), categories=as.character(x[7]), comments=as.character("true")))
+  yamlheader <- as.yaml(list(layout="page", title=as.character(x[2]), "header-img"=paste("/", banner, sep=""), category=as.character(x[7]), comments=as.character("true")))
   write(paste("---\n", yamlheader,"---\n\n", sep=""), file=file.name, append=T)
   write(unlist(x[6]), file=file.name, append=T)
-  write("\n<div class=\"photo-gallery\">\n<ul>", file=file.name, append=T)
-  lapply(photos, function(y) write(paste("<li><img src=\"{{ site.github.url }}/", y, "\" alt=\"", x[2], "\"></li>", sep=""), file=file.name, append=T))
-  write("</ul>\n</div>", file=file.name, append=T)
+  if (length(photos)>0) {
+    write('\n<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>',
+    file=file.name, append=T)
+    for (i in seq_along(photos[-1])) {
+      write(paste('    <li data-target="#myCarousel" data-slide-to="', i, '"></li>', sep=""), file = file.name, append = T)
+    }
+    write('  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">',
+    file = file.name, append=T)
+    write(paste('      <img src="{{ site.github.url }}/', photos[1], '" alt="', x[2], '">', sep=""), file = file.name, append = T)
+    write('    </div>', file= file.name, append = T)
+    for (i in photos[-1]) {
+      write('    <div class="item">', file= file.name, append = T)
+      write(paste('      <img src="{{ site.github.url }}/', i, '" alt="', x[2], '">', sep=""), file = file.name, append = T)
+      write('    </div>', file= file.name, append = T)    
+    }
+    write('  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>', file = file.name, append=T)
+  }
   return(paste(name, ".md", sep=""))
 }
 
@@ -70,7 +99,13 @@ title: Índice de lugares
 header-img: /img/sierra-de-los-molinos-1.jpg
 ---\n\n"
   write(yamlheader, file=file.name, append=T)
-  write("## Índice alfabético\n", file=file.name, append=T)
+  write('## Índice por categorías\n
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#ambiental">Ambiental</a> &nbsp;&nbsp;&nbsp;
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#artístico">Artístico</a> &nbsp;&nbsp;&nbsp;
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#etnográfico">Etnográfico</a> &nbsp;&nbsp;&nbsp;
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#histórico">Histórico</a> &nbsp;&nbsp;&nbsp;
+
+## Índice alfabético\n', file=file.name, append=T)
   write(unlist(lapply(data[,2], function(x) paste("- [", x, "](", gsub(" ", "-", tolower(iconv(x, to='ASCII//TRANSLIT'))), "/index.html)", sep=""))), file=file.name, append=T)
   # Generar las fichas
   lapply(1:nrow(data), function(i) render.record(data[i,]))

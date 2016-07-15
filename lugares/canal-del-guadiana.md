@@ -2,7 +2,7 @@
 layout: page
 title: Canal del Guadiana
 header-img: /img/fondo-azul.png
-categories: Ambiental
+category: Ambiental
 comments: 'true'
 ---
 
@@ -12,8 +12,3 @@ El canal del Guadiana es un curso artificial que recoge las aguas de desagüe de
 Su primer antecedente fue el Canal del Gran Prior, ahora ya en desuso,  sin duda la obra hidráulica más antigua ejecutada en la zona y de la que aún podemos encontrar vestigios por toda la zona. Hay quien atribuye su construcción al restaurador de Argamasilla de Alba D. Diego de Toledo, Prior de la Orden de San Juan (S. XVI), pero su construcción es evidentemente anterior a este Prior, teniéndola otros por obra de Fray Fernando Rodríguez en el siglo XIV. Su configuración definitiva se realiza en el siglo XVIII.
 La finalidad de esta obra de canalización  era acabar con la vasta zona pantanosa formada entre el río Záncara y  el lugar de filtración o desaparición del río Pinilla (o Guadiana Alto o Viejo) por Peñarroya, a la vez que se aprovechaban las aguas para el riego.
 
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

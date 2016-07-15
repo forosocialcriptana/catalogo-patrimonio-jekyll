@@ -2,14 +2,9 @@
 layout: page
 title: Chozo Telares
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Bombo doble evolucionado a cocero. Tiene dos bombos unidos internamente, chimenea, poyo y cuadra.
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

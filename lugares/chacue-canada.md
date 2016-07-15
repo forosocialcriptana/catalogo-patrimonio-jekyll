@@ -2,14 +2,9 @@
 layout: page
 title: Chacue Cañada
 header-img: /img/fondo-azul.png
-categories: Etnográfico
+category: Etnográfico
 comments: 'true'
 ---
 
 
 Construcción rural mezcla de choza y cueva
-
-<div class="photo-gallery">
-<ul>
-</ul>
-</div>

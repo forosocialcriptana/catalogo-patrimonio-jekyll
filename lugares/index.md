@@ -5,6 +5,13 @@ header-img: /img/sierra-de-los-molinos-1.jpg
 ---
 
 
+## Índice por categorías
+
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#ambiental">Ambiental</a> &nbsp;&nbsp;&nbsp;
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#artístico">Artístico</a> &nbsp;&nbsp;&nbsp;
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#etnográfico">Etnográfico</a> &nbsp;&nbsp;&nbsp;
+<i class="fa fa-tag"></i> &nbsp;<a href="{{ site.github.url }}/lugares/categorias/index.html#histórico">Histórico</a> &nbsp;&nbsp;&nbsp;
+
 ## Índice alfabético
 
 - [Álamo blanco centenario](alamo-blanco-centenario/index.html)
@@ -14,7 +21,6 @@ header-img: /img/sierra-de-los-molinos-1.jpg
 - [Arroyo de La Laguna](arroyo-de-la-laguna/index.html)
 - [Arroyo del Pico](arroyo-del-pico/index.html)
 - [Balsas](balsas/index.html)
-- [Baños de León Sañoso](banos-de-leon-sanoso/index.html)
 - [Baños de León Sañoso](banos-de-leon-sanoso/index.html)
 - [Bombo Almenara](bombo-almenara/index.html)
 - [Bombo Avance](bombo-avance/index.html)
@@ -208,6 +214,7 @@ header-img: /img/sierra-de-los-molinos-1.jpg
 - [Entorno de la Hidalga](entorno-de-la-hidalga/index.html)
 - [Entorno de la Huerta el Bajo](entorno-de-la-huerta-el-bajo/index.html)
 - [Entorno de la Huerta Treviño](entorno-de-la-huerta-trevino/index.html)
+- [Entorno de los Baños de León Sañoso](entorno-de-los-banos-de-leon-sanoso/index.html)
 - [Entorno de Villajos](entorno-de-villajos/index.html)
 - [Eras de Arriba](eras-de-arriba/index.html)
 - [Eras de la Cruz del Estanquero](eras-de-la-cruz-del-estanquero/index.html)
@@ -221,6 +228,8 @@ header-img: /img/sierra-de-los-molinos-1.jpg
 - [Fenarales del Charco](fenarales-del-charco/index.html)
 - [Horno de cal de la Huerta de Treviño](horno-de-cal-de-la-huerta-de-trevino/index.html)
 - [Hornos de cal de la Ctra. Virgen](hornos-de-cal-de-la-ctra.-virgen/index.html)
+- [Huerta del Bajo](huerta-del-bajo/index.html)
+- [Huertos Cerretes](huertos-cerretes/index.html)
 - [Iglesia de la Asunción de Ntra Señora](iglesia-de-la-asuncion-de-ntra-senora/index.html)
 - [La Cañamona](la-canamona/index.html)
 - [La Dehesilla](la-dehesilla/index.html)
