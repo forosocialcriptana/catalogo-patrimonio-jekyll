@@ -107,6 +107,17 @@ header-img: /img/sierra-de-los-molinos-1.jpg
 
 ## Índice alfabético\n', file=file.name, append=T)
   write(unlist(lapply(data[,2], function(x) paste("- [", x, "](", gsub(" ", "-", tolower(iconv(x, to='ASCII//TRANSLIT'))), "/index.html)", sep=""))), file=file.name, append=T)
+  
+  # Generar estadísticas
+  
+  write("\n## Estadísticas de lugares\n", file = file.name, append = T)
+  write(paste("Número de lugares catalogados: <b>", nrow(data), "</b>\n", sep=""), file = file.name, append = T)
+  write('<img src="estadisticas.png" alt="Estadística de lugares catalogados">', file= file.name, append = T)
+  table <- table(data$Tipo.de.valor)
+  labels <- paste(names(table), "\n", table, sep="")
+  png("lugares/estadisticas.png")
+  pie(table, labels = labels, main="Lugares catalogados por categorías", col=c("#00FF00FF", "#FFFF00FF", "#FF0000FF", "#0000FFFF"))
+  dev.off()
   # Generar las fichas
   lapply(1:nrow(data), function(i) render.record(data[i,]))
 }

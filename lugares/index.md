@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Índice de lugares
-header-img: /img/sierra-de-los-molinos-1.jpg
+header-img: /img/home-bg.jpg
 ---
 
 
@@ -282,3 +282,9 @@ header-img: /img/sierra-de-los-molinos-1.jpg
 - [Yacimiento del Pico](yacimiento-del-pico/index.html)
 - [Yacimiento de Valrrepiso](yacimiento-de-valrrepiso/index.html)
 - [Yacimiento romano-medieval de Villajos](yacimiento-romano-medieval-de-villajos/index.html)
+
+## Estadísticas de lugares
+
+Número de lugares catalogados: <b>268</b>
+
+<img src="estadisticas.png" alt="Estadística de lugares catalogados">
