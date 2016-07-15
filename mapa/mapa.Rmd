@@ -22,12 +22,12 @@ library(htmltools)
 library(htmlwidgets)
 library(rgdal)
 
-baseurl <- "http://forosocialcriptana.github.io/catalogo/"
+baseurl <- "http://forosocialcriptana.github.io/catalogo-patrimonio/"
 url.data <- "https://docs.google.com/spreadsheets/d/1hWyDiPwVU1oUflqVSC6iSveP-NigMpZhh9e7RKXZpJk/pub?output=csv"
 data <- read.csv(text = getURL(url.data, .encoding = "UTF-8"), encoding = "UTF-8", header = T, stringsAsFactors = F)
 data[["Tipo.de.valor"]] <- factor(data[["Tipo.de.valor"]])
 # Obtención de rutas
-ruta1 <- readOGR(dsn = "datos", layer = "ruta1")
+ruta1 <- readOGR(dsn = "../datos", layer = "ruta1")
 # Función que obiene el nombre normalizado para una ficha de un lugar. 
 getName <- function (x) {
   name <- gsub(" ", "-", tolower(iconv(x, to='ASCII//TRANSLIT')))
