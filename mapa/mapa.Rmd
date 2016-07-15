@@ -38,7 +38,7 @@ getName <- function (x) {
 getUrlPhoto <- function (x) {
   name <- ""
   if (x[9]!="") {
-    name <- paste("https://forosocialcriptana.github.io/catalogo/img/small/", getName(x[2]), "-1.jpg", sep="")
+    name <- paste(baseurl, "img/small/", getName(x[2]), "-1.jpg", sep="")
   }
   return(name)
 }
@@ -71,7 +71,7 @@ mapa <- leaflet(data=data) %>%
 # Imprimir el mapa
 mapa
 
-saveWidget(mapa, "index.html", selfcontained = TRUE)
+saveWidget(mapa, "index.html", selfcontained = FALSE)
 ```
 
 
