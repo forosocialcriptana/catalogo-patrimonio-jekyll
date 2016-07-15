@@ -39,7 +39,7 @@ header-img: /img/home-bg.jpg
   {% for post in site.pages %}
   {% if post.category contains category %}
     <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endif %}
   {% endfor %}
