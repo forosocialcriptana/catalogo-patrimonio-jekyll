@@ -56,7 +56,7 @@ mapa <- leaflet(data=data) %>%
   # Añadir capa de mapa ortofotográfico
   addTiles("https://api.mapbox.com/styles/v1/forosocialcriptana/ciq96tnhl007zerm4k9idudqz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Fotográfico", attribution = "<a href=\"http://forosocialcriptana.com\">Foro Social de Campo de Criptana</a>") %>%  
   # Añadir marcadores de lugares
-  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~Popup, color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 4, clusterOptions = markerClusterOptions(), group="Lugares") %>%
+  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~Popup, color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 6, clusterOptions = markerClusterOptions(), group="Lugares") %>%
   # Añadir rutas
   addPolylines(data = ruta1, color = "purple", weight = 4, popup = "Ruta del Arroyo San Marcos", group="Rutas") %>%
   hideGroup("Rutas") %>%
