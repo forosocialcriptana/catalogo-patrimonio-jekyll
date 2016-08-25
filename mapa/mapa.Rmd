@@ -79,12 +79,3 @@ saveWidget(mapa, "index.html", selfcontained = FALSE)
 ```
 
 
-
-mapa <- leaflet(data=data) %>%
-  # setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
-  # Añadir capa de mapa base
-  addTiles("https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Topográfico", attribution = "<a href=\"http://forosocialcriptana.com\">Foro Social de Campo de Criptana</a>") %>%
-  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~as.character(Popup), group="Lugares", label=~as.character(Título), color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 6, clusterOptions = markerClusterOptions())
-
-mapa %>% addSearchMarker('Lugares', position = 'topleft', propertyName = 'popup')
-
