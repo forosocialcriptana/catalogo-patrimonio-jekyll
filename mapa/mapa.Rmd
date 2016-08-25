@@ -18,6 +18,7 @@ library(RCurl)
 library(yaml)
 library(dplyr)
 library(leaflet)
+library(leafletplugins)
 library(htmltools)
 library(htmlwidgets)
 library(rgdal)
@@ -50,11 +51,12 @@ data[["Popup"]] <- paste("<h3><a href=\"", baseurl, "lugares/", getName(data[["T
 pal <- colorFactor(c("#00FF00FF", "#FFFF00FF", "#FF0000FF", "#0000FFFF"), data[["Tipo.de.valor"]])
 #colors <- colorFactor(terrain.colors(4), levels(data[["Tipo.de.valor"]]))
 mapa <- leaflet(data=data) %>%
-  setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
+  # setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
   # Añadir capa de mapa base
   addTiles("https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Topográfico", attribution = "<a href=\"http://forosocialcriptana.com\">Foro Social de Campo de Criptana</a>") %>%  
   # Añadir capa de mapa ortofotográfico
   addTiles("https://api.mapbox.com/styles/v1/forosocialcriptana/ciq96tnhl007zerm4k9idudqz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Fotográfico", attribution = "<a href=\"http://forosocialcriptana.com\">Foro Social de Campo de Criptana</a>") %>%  
+  addControlGPS() %>%
   # Añadir marcadores de lugares
   addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~Popup, color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 6, clusterOptions = markerClusterOptions(), group="Lugares") %>%
   # Añadir rutas
@@ -67,7 +69,9 @@ mapa <- leaflet(data=data) %>%
     options = layersControlOptions(collapsed = TRUE) 
   ) %>%
   # Añadir leyenda
-  addLegend(position = 'bottomright', pal=pal, values=~Tipo.de.valor, title="Tipo", opacity = 0.6) 
+  addLegend(position = 'bottomright', pal=pal, values=~Tipo.de.valor, title="Tipo", opacity = 0.6) %>%
+  # Add search button
+  addSearchMarker('Lugares', position = 'topleft', propertyName = 'popup')
 # Imprimir el mapa
 mapa
 
