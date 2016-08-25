@@ -48,7 +48,7 @@ data[["Fotos"]] <- apply(data, 1, getUrlPhoto)
 data[["Popup"]] <- paste("<h3><a href=\"", baseurl, "lugares/", getName(data[["Título"]]), "/index.html\">", data[["Título"]], "</a></h3>\n\n<img src=\"", data[["Fotos"]], "\">\n\n<p>", data[["Descripción.breve"]], "</p>", sep="")
 # Paleta de colores
 #tmp <- factor(sample.int(4, nrow(data), TRUE))
-pal <- colorFactor(c("#00FF00FF", "#FFFF00FF", "#FF0000FF", "#0000FFFF"), data[["Tipo.de.valor"]])
+pal <- colorFactor(c("#00FF00FF", "#FFFF00FF", "#FF6600FF", "#0000FFFF"), data[["Tipo.de.valor"]])
 #colors <- colorFactor(terrain.colors(4), levels(data[["Tipo.de.valor"]]))
 mapa <- leaflet(data=data) %>%
   # setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
@@ -58,7 +58,7 @@ mapa <- leaflet(data=data) %>%
   addTiles("https://api.mapbox.com/styles/v1/forosocialcriptana/ciq96tnhl007zerm4k9idudqz/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Fotográfico", attribution = "<a href=\"http://forosocialcriptana.com\">Foro Social de Campo de Criptana</a>") %>%  
   addControlGPS() %>%
   # Añadir marcadores de lugares
-  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~Popup, color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 6, clusterOptions = markerClusterOptions(), group="Lugares") %>%
+  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~as.character(Popup), group="Lugares", label=~as.character(Título), color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 6) %>%
   # Añadir rutas
   addPolylines(data = ruta1, color = "purple", weight = 4, popup = "Ruta del Arroyo San Marcos", group="Rutas") %>%
   hideGroup("Rutas") %>%
@@ -71,7 +71,7 @@ mapa <- leaflet(data=data) %>%
   # Añadir leyenda
   addLegend(position = 'bottomright', pal=pal, values=~Tipo.de.valor, title="Tipo", opacity = 0.6) %>%
   # Add search button
-  addSearchMarker('Lugares', position = 'topleft', propertyName = 'popup')
+  addSearchMarker('Lugares', position = 'topleft', propertyName = 'label')
 # Imprimir el mapa
 mapa
 
@@ -80,6 +80,11 @@ saveWidget(mapa, "index.html", selfcontained = FALSE)
 
 
 
+mapa <- leaflet(data=data) %>%
+  # setView(lng = -3.0837, lat = 39.3343, zoom = 11) %>%
+  # Añadir capa de mapa base
+  addTiles("https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZm9yb3NvY2lhbGNyaXB0YW5hIiwiYSI6ImJxdVlNV00ifQ.LRq3xNtoNg_WF1QBodWziA", group="Topográfico", attribution = "<a href=\"http://forosocialcriptana.com\">Foro Social de Campo de Criptana</a>") %>%
+  addCircleMarkers(lng=~Longitud, lat=~Latitud, popup=~as.character(Popup), group="Lugares", label=~as.character(Título), color=~pal(Tipo.de.valor), opacity = 1, fillOpacity = 0.5, weight = 2, radius = 6, clusterOptions = markerClusterOptions())
 
-
+mapa %>% addSearchMarker('Lugares', position = 'topleft', propertyName = 'popup')
 
